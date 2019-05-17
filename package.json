@@ -6,6 +6,7 @@
   "scripts": {
     "cm": "git-cz",
     "test": "echo \"Error: no test specified\" && exit 1",
+    "release-dry": "standard-version --dry-run",
     "release": "standard-version"
   },
   "author": "dom",
