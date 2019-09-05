@@ -15,6 +15,10 @@ While many commit formats exist and you can invent your own, this project templa
 
 https://github.com/conventional-changelog/conventional-changelog
 
+## Quick Setup
+
+See https://github.com/jlegrone/create-semantic-module.
+
 ## How It Works
 
 All tooling is provided via `npm` packages.
