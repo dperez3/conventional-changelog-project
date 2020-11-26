@@ -19,6 +19,31 @@ https://github.com/conventional-changelog/conventional-changelog
 
 See https://github.com/jlegrone/create-semantic-module.
 
+```
+//yarn init?
+
+yarn add "husky" -D
+yarn add "@commitlint/cli" -D
+yarn add "@commitlint/config-conventional" -D
+yarn add "commitizen" -D
+yarn add "cz-conventional-changelog" -D
+yarn add "standard-version" -D
+
+// package.json
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+
+echo "module.exports = {extends: ['@commitlint/config-conventional']};" > commitlint.config.js
+```
+
 ## How It Works
 
 All tooling is provided via `npm` packages.
